@@ -1,5 +1,5 @@
 <?php
-
+echo 
 print("Hello World!");
 $a=10;
 
