@@ -1,6 +1,6 @@
 <html lang = "en">
   <head>
-    <title> Process the popcorn3.html form </title>
+    <title> Rental House System</title>
 
     <meta charset = "utf-8" />
     <style type = "text/css">
