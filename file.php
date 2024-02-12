@@ -1,38 +1,37 @@
-<html lang = "en">
-  <head>
-    <title> Rental House System</title>
-
-    <meta charset = "utf-8" />
-    <style type = "text/css">
-      td, th, table {border: thin solid black;}
-    </style>
-  </head>
-  <body>
-
 <?php
+
+// Database connection
+$servername = "localhost";
+$username = "root"; // Replace with your MySQL username
+$password = ""; // Replace with your MySQL password
+$dbname = "flatdatabase";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Retrieve form data
 $name = $_POST['name']';
 $phone = $_POST['phone'];
 $description= $_POST['description'];
 $question = $_POST['question'];
 $question = $_POST['question'];
+
+
+// Prepare SQL statement
+$sql = "INSERT INTO books (name,phone,description,question)
+        VALUES ('$name', '$phone', '$description', '$question')";
+
+// Execute SQL statement
+if ($conn->query($sql) === TRUE) {
+    echo "Flat renter information is succesfully stored";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+
 ?>
-<table>
-      <caption> Renter Information </caption>
- <tr>
-        <th> Name</th>
-        <th> Phone Number</th>
-        <th> Description </th>
-        <th> Question </th>
-      </tr>
-     <tr>
-     <td> <?php printf ("$ %s", $name); ?>
-        </td>
-        <td> <?php printf ("$ %s", $phone); ?>
-        </td><td> <?php printf ("$ %s", $description); ?>
-        </td><td> <?php printf ("$ %s", $question); ?>
-        </td>
-        </tr>
-    </table>
-    </body>
-    </html>
-  
