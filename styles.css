@@ -1,182 +1,270 @@
-body {
-					 font-family: 'Arial', sans-serif;
-					 margin: 0;
-					 padding: 0;
-					 background-color: #f8f8f8;
-					 color: #333;
-			 }
+header {
+  background-color: #E0144C;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-			 header {
-					 background-color: #2c3e50;
-					 color: white;
-					 padding: 1em;
-					 text-align: center;
-			 }
+.navbar-brand {
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 4px;
+}
 
-			 nav {
-					 background-color: #34495e;
-					 overflow: hidden;
-			 }
+.fa-home {
+  font-size: 1.5em;
+  margin-right: 0.5rem;
+}
 
-			 nav a {
-					 float: left;
-					 display: block;
-					 color: white;
-					 text-align: center;
-					 padding: 14px 16px;
-					 text-decoration: none;
-			 }
+.fa-solid {
+  font-size: 100px;
+  padding: 30px;
+  text-align: "center";
+  color: #E0144C;
+}
 
-			 nav a:hover {
-					 background-color: #555;
-					 color: white;
-			 }
+.fa-solid:hover {
+  color: #ff4c68;
+}
 
-			 section {
-					 padding: 20px;
-					 overflow: hidden;
-			 }
+.container-fluid {
+  padding: 3% 15%;
+}
 
-			 .flat-card {
-					 border: 1px solid #ccc;
-					 border-radius: 8px;
-					 overflow: hidden;
-					 margin: 10px;
-					 width: 300px;
-					 float: left;
-					 background-color: #fff;
-					 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-					 transition: transform 0.3s;
-			 }
+.navbar {
+  padding: 0 0 4.5rem;
+}
 
-			 .flat-card:hover {
-					 transform: scale(1.05);
-			 }
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
-			 .flat-img {
-					 width: 100%;
-					 height: 200px;
-					 object-fit: cover;
-			 }
+.nav-item {
+  padding: 0 18px;
+}
 
-			 .flat-details {
-					 padding: 15px;
-			 }
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
 
-			 .flat-details h2 {
-					 color: #2c3e50;
-			 }
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  z-index: 1;
+  position: relative;
+}
 
-			 .flat-details p {
-					 color: #777;
-			 }
+.col-lg-4 {
+  text-align: center;
+}
 
-			 .contact-btn {
-					 background-color: #3498db;
-					 color: white;
-					 padding: 10px;
-					 border: none;
-					 cursor: pointer;
-					 width: 100%;
-					 font-size: 16px;
-			 }
+.feature-heading {
+  font-weight: bold;
+}
 
-			 .flat-view {
-					 max-width: 800px;
-					 margin: 0 auto;
-			 }
+section {
+  padding: 10px;
+  overflow: hidden;
+}
 
-			 form {
-					 background-color: #fff;
-					 padding: 20px;
-					 border-radius: 8px;
-					 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-					 margin-top: 20px;
-					 display: none;
-			 }
+.flat-avl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background: #E0144C;
+  color: white;
+  padding: 5px 10px;
+}
 
-			 label {
-					 display: block;
-					 margin-bottom: 10px;
-					 color: #2c3e50;
-			 }
+.flat-avl h1 {
+  font-size: 36px;
+  letter-spacing: 7px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
 
-			 input,
-			 textarea {
-					 width: 100%;
-					 padding: 10px;
-					 margin-bottom: 10px;
-					 border: 1px solid #ccc;
-					 border-radius: 4px;
-			 }
+#flat-listings {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
 
-			 input[type="radio"] {
-					 margin-right: 5px;
-			 }
+.flat-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
 
-			 button {
-					 background-color: #3498db;
-					 color: white;
-					 padding: 10px 20px;
-					 border: none;
-					 border-radius: 4px;
-					 cursor: pointer;
-			 }
-			 #home-banner {
-			     position: relative;
-			     height: 600px; /* Adjust the height as needed */
-			     background: url('Flat/Flat7.jpg') center/cover no-repeat;
-			     text-align: center;
-			     color: Black; /* Text color */
-			 }
+@media (max-width: 768px) {
+  #flat-listings {
+    grid-template-columns: 1fr;
+  }
+}
 
-			 .home-banner-content {
-			     position: absolute;
-			     top: 50%;
-			     left: 50%;
-			     transform: translate(-50%, -50%);
-			 }
+.flat-details h2 {
+  color: #fff;
+}
 
-			 #home-banner h2 {
-			     font-size: 2em;
-			     margin-bottom: 10px;
-			 }
+.flat-details p {
+  color: #f8f8f8;
+}
 
-			 #home-banner p {
-			     font-size: 1.2em;
-			 }
+.flat-card:hover {
+  transform: scale(1.05);
+}
 
+.flat-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
-	 /* testimonials */
-	 #testimonials{
-	   padding: 7%;
-	   text-align:center;
-	   background-color: #E0144C;
-	   color:#fff;
-	 }
+.flat-details {
+  padding: 15px;
+}
 
+.flat-details h2 {
+  color: #E0144C;
+}
 
-	 /* testimonial-image */
-	 .testimonial-image{
-	   width:25%;
-	   border-radius: 60%;
-	   border: solid;
-	   margin:10px;
-	 }
+.flat-details p {
+  color: #777;
+}
 
+.fa-inr {
+  font-size: 16px;
+}
 
-	 /* Footer section */
-	 #footer{
-	   padding: 7% 15%;
-	   text-align:center;
-	   font-size: 23px;
-	 }
-	 .fa-brands:hover{
-	   color:grey;
-	 }
-	 .fa-regular:hover{
-	   color:grey;
-	 }
-	 .icons{
-	   margin:20px 10px;
-	 }
+.contact-btn {
+  background: linear-gradient(to right, #E0144C, #FFD166);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-btn:hover {
+  background: #E0144C;
+}
+
+.flat-view {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #E0144C;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #E0144C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/*  */
+#home-banner {
+  position: relative;
+  height: 1000px;
+  background: url('Flat/bg.png') center/cover no-repeat;
+  text-align: center;
+  color: Black;
+}
+
+.home-banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Montserrat', sans-serif;
+}
+
+#home-banner h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#home-banner p {
+  font-size: 1.2em;
+}
+
+/* testimonials */
+#testimonials {
+  padding: 7%;
+  text-align: center;
+  background-color: #E0144C;
+  color: #fff;
+}
+
+/* testimonial-image */
+.testimonial-image {
+  width: 25%;
+  border-radius: 60%;
+  border: solid;
+  margin: 10px;
+}
+
+/* Footer section */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+  font-size: 23px;
+}
+
+.fa-brands:hover {
+  color: grey;
+}
+
+.fa-regular:hover {
+  color: grey;
+}
+
+.icons {
+  margin: 20px 10px;
+}
+
+.flat-avl {
+  background-color: #E0144C;
+  color: #fff;
+  height: 300px;
+  text-align: center;
+  text-width: 170px;
+}
