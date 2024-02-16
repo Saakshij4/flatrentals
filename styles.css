@@ -204,7 +204,7 @@ button {
 #home-banner {
   position: relative;
   height: 1000px;
-  background: url('bg.png') center/cover no-repeat;
+  background: url('Flat/bg.png') center/cover no-repeat;
   text-align: center;
   color: Black;
 }
@@ -267,4 +267,91 @@ button {
   height: 300px;
   text-align: center;
   text-width: 170px;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 3% 5%; /* Adjust padding for smaller screens */
+  }
+
+  .navbar-brand {
+    font-size: 2rem; /* Decrease font size for smaller screens */
+  }
+
+  .navbar {
+    padding: 0 0 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .nav-item {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .feature-heading {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
+
+  #features {
+    padding: 5% 5%; /* Adjust padding for smaller screens */
+  }
+
+  #flat-listings {
+    grid-template-columns: 1fr; /* Change to single column layout for smaller screens */
+  }
+
+  .flat-avl {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  #footer {
+    padding: 5% 5%; /* Adjust padding for smaller screens */
+  }
+
+  .testimonial-image {
+    width: 50%; /* Adjust image size for smaller screens */
+  }
+}
+
+
+  @media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem; /* Further decrease font size for very small screens */
+  }
+
+  .nav-item {
+    padding: 0 5px; /* Further adjust padding for very small screens */
+  }
+
+  .feature-heading {
+    font-size: 1.2rem; /* Further decrease font size for very small screens */
+  }
+
+  #features {
+    padding: 3% 3%; /* Further adjust padding for very small screens */
+  }
+
+  .testimonial-image {
+    width: 70%; /* Further adjust image size for very small screens */
+  }
+}
+
+  @media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.2rem; /* Decrease font size for phones */
+  }
+
+  .nav-item {
+    padding: 0 3px; /* Further adjust padding for phones */
+  }
+
+  .feature-heading {
+    font-size: 1rem; /* Further decrease font size for phones */
+  }
+
+  #features {
+    padding: 2% 2%; /* Further adjust padding for phones */
+  }
+
+  .testimonial-image {
+    width: 90%; /* Further adjust image size for phones */
+  }
 }
