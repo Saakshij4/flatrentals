@@ -309,6 +309,9 @@ button {
   .testimonial-image {
     width: 50%; /* Adjust image size for smaller screens */
   }
+  #home-banner {
+    height: 500px; /* Adjust the height for smaller screens */
+  }
 }
 
 
@@ -332,6 +335,9 @@ button {
   .testimonial-image {
     width: 70%; /* Further adjust image size for very small screens */
   }
+     #home-banner {
+    height: 400px; /* Further adjust the height for very small screens */
+  }
 }
 
   @media (max-width: 480px) {
@@ -353,5 +359,8 @@ button {
 
   .testimonial-image {
     width: 90%; /* Further adjust image size for phones */
+  }
+    #home-banner {
+    height: 300px; /* Further adjust the height for phones */
   }
 }
