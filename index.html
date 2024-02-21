@@ -269,16 +269,16 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-</section>
+  </section>
 
-<div class="flat-avlsec">
-  <h1 font-family: 'Montserrat' , sans-serif;>Get to know us more...</h1>
-</div>
+  <div class="flat-avlsec">
+    <h1 font-family: 'Montserrat' , sans-serif;>Get to know us more...</h1>
+  </div>
 
-<div class="button-container">
+  <div class="button-container">
     <a href="login.html" class="button-link"><button class="a">Login</button></a>
     <a href="signup.html" class="button-link"><button class="a">Signup</button></a>
-</div>
+  </div>
 
 
   <footer id="footer">
@@ -310,22 +310,21 @@
     }
 
     document.getElementById('loginBtn').addEventListener('click', function() {
-        document.getElementById('loginForm').classList.add('show');
-        document.getElementById('signupForm').classList.remove('show');
+      document.getElementById('loginForm').classList.add('show');
+      document.getElementById('signupForm').classList.remove('show');
     });
 
     document.getElementById('signupBtn').addEventListener('click', function() {
-        document.getElementById('signupForm').classList.add('show');
-        document.getElementById('loginForm').classList.remove('show');
+      document.getElementById('signupForm').classList.add('show');
+      document.getElementById('loginForm').classList.remove('show');
     });
 
     document.getElementById('signupLink').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default action of the anchor tag
-        document.getElementById('signupForm').classList.add('show');
-        document.getElementById('loginForm').classList.remove('show');
+      event.preventDefault(); // Prevent the default action of the anchor tag
+      document.getElementById('signupForm').classList.add('show');
+      document.getElementById('loginForm').classList.remove('show');
     });
-
-</script>
+  </script>
 
 
 
