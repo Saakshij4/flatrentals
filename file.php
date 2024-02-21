@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
-$name = $_POST['name']';
+$name = $_POST['name'];
 $phone = $_POST['phone'];
 $description= $_POST['description'];
 $question = $_POST['question'];
@@ -22,8 +22,9 @@ $question = $_POST['question'];
 
 
 // Prepare SQL statement
-$sql = "INSERT INTO Renter(name,phone,description,question)
+$sql = "INSERT INTO Renter (Name,Phone_Number,Description,Question)
         VALUES ('$name', '$phone', '$description', '$question')";
+
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
@@ -31,6 +32,7 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+
 
 $conn->close();
 
