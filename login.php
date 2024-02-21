@@ -14,21 +14,24 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
+if(isset($email) || isset($password)){
+// Retrieve form data
 $email = $_POST['email'];
 $password = $_POST['password'];
-
+}
 
 
 // Prepare SQL statement
-$sql = "INSERT INTO login (email,password)
-        VALUES ('$email', '$password')";
+$sql = "INSERT INTO Login (email,password)
+        VALUES ( '$email', '$password')";
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
-    echo "Flat renter information is succesfully stored";
+    echo " Login information is succesfully stored";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+
 
 $conn->close();
 
