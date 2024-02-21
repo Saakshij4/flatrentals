@@ -154,8 +154,7 @@
       <p id="flat-view-info">Size: | Location: | Rent: | Flat Number: </p>
     </div>
   </section>
-
-  <form id="contact-form">
+<form action="file.php" id="contact-form" method="POST">
     <label for="name">Your Name:</label>
     <input type="text" id="name" name="name" required>
 
@@ -174,7 +173,11 @@
 
   </form>
 
-  <script>
+
+
+  
+
+   <script>
     function showContactForm(flatTitle) {
       // Hide flat listings and show the contact form
       document.getElementById("flat-listings").style.display = "none";
