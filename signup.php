@@ -14,6 +14,7 @@ if ($conn->connect_error) {
 }
 
 // Retrieve form data
+if(isset($email)||isset($email)||isset($password)){
 $email = $_POST['email'];
 $username=$_POST['username'];
 $password = $_POST['password'];
@@ -26,10 +27,12 @@ $sql = "INSERT INTO signup (email,username,password)
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
-    echo "Flat renter information is succesfully stored";
+    echo "User sign uped successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+}
+
 
 $conn->close();
 
