@@ -200,11 +200,10 @@ button {
   cursor: pointer;
 }
 
-/*  */
 #home-banner {
   position: relative;
-  height: 1000px;
-  background: url('bg.png') center/cover no-repeat;
+  height: 1005px;
+  background: url('Flat/3.png') center/cover no-repeat;
   text-align: center;
   color: Black;
 }
@@ -226,7 +225,6 @@ button {
   font-size: 1.2em;
 }
 
-/* testimonials */
 #testimonials {
   padding: 7%;
   text-align: center;
@@ -234,7 +232,6 @@ button {
   color: #fff;
 }
 
-/* testimonial-image */
 .testimonial-image {
   width: 25%;
   border-radius: 60%;
@@ -242,7 +239,6 @@ button {
   margin: 10px;
 }
 
-/* Footer section */
 #footer {
   padding: 7% 15%;
   text-align: center;
@@ -271,96 +267,140 @@ button {
 
 @media (max-width: 768px) {
   .container-fluid {
-    padding: 3% 5%; /* Adjust padding for smaller screens */
+    padding: 3% 5%;
   }
 
   .navbar-brand {
-    font-size: 2rem; /* Decrease font size for smaller screens */
+    font-size: 2rem;
   }
 
   .navbar {
-    padding: 0 0 2rem; /* Adjust padding for smaller screens */
+    padding: 0 0 2rem;
   }
 
   .nav-item {
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px;
   }
 
   .feature-heading {
-    font-size: 1.5rem; /* Decrease font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   #features {
-    padding: 5% 5%; /* Adjust padding for smaller screens */
+    padding: 5% 5%;
   }
 
   #flat-listings {
-    grid-template-columns: 1fr; /* Change to single column layout for smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .flat-avl {
-    height: auto; /* Adjust height for smaller screens */
+    height: auto;
   }
 
   #footer {
-    padding: 5% 5%; /* Adjust padding for smaller screens */
+    padding: 5% 5%;
   }
 
   .testimonial-image {
-    width: 50%; /* Adjust image size for smaller screens */
+    width: 50%;
   }
+
   #home-banner {
-    height: 500px; /* Adjust the height for smaller screens */
+    height: 500px;
   }
 }
 
-
-  @media (max-width: 576px) {
+@media (max-width: 576px) {
   .navbar-brand {
-    font-size: 1.5rem; /* Further decrease font size for very small screens */
+    font-size: 1.5rem;
   }
 
   .nav-item {
-    padding: 0 5px; /* Further adjust padding for very small screens */
+    padding: 0 5px;
   }
 
   .feature-heading {
-    font-size: 1.2rem; /* Further decrease font size for very small screens */
+    font-size: 1.2rem;
   }
 
   #features {
-    padding: 3% 3%; /* Further adjust padding for very small screens */
+    padding: 3% 3%;
   }
 
   .testimonial-image {
-    width: 70%; /* Further adjust image size for very small screens */
+    width: 70%;
   }
-     #home-banner {
-    height: 300px; /* Further adjust the height for very small screens */
+
+  #home-banner {
+    height: 300px;
   }
 }
 
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
   .navbar-brand {
-    font-size: 1.2rem; /* Decrease font size for phones */
+    font-size: 1.2rem;
   }
 
   .nav-item {
-    padding: 0 3px; /* Further adjust padding for phones */
+    padding: 0 3px;
   }
 
   .feature-heading {
-    font-size: 1rem; /* Further decrease font size for phones */
+    font-size: 1rem;
   }
 
   #features {
-    padding: 2% 2%; /* Further adjust padding for phones */
+    padding: 2% 2%;
   }
 
   .testimonial-image {
-    width: 90%; /* Further adjust image size for phones */
+    width: 90%;
   }
-    #home-banner {
-    height: 250px; /* Further adjust the height for phones */
+
+  #home-banner {
+    height: 250px;
   }
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-link {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.a {
+  font-size: 16px;
+  background-color: #E0144C;
+  color: #ffffff;
+  border: none;
+  padding: 30px 60px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.a:hover {
+  background-color: #b90038;
+}
+
+.flat-avlsec {
+  background-color: white;
+  color: #E0144C;
+  height: 50px;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flat-avlsec h1 {
+  font-size: 36px;
+  letter-spacing: 7px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
 }
