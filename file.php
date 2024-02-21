@@ -22,7 +22,7 @@ $question = $_POST['question'];
 
 
 // Prepare SQL statement
-$sql = "INSERT INTO books (name,phone,description,question)
+$sql = "INSERT INTO Renter(name,phone,description,question)
         VALUES ('$name', '$phone', '$description', '$question')";
 
 // Execute SQL statement
