@@ -36,6 +36,7 @@
 </head>
 
 <body>
+
   <header>
     <!-- <div class="container"> -->
     <div class="container-fluid">
@@ -67,7 +68,7 @@
     </div>
     <br>
     <section id="home-banner">
-      
+
     </section>
   </header>
   <br>
@@ -106,7 +107,7 @@
   <section id="flat-listings">
 
     <div class="flat-card" data-flat-number="101">
-      <img class="flat-img" src="Flat1.jpg" alt="Flat 4">
+      <img class="flat-img" src="Flat/Flat1.jpg" alt="Flat/Flat 4">
       <div class="flat-details">
         <h2>Flat 1</h2>
         <p>Size: 2BHK</p>
@@ -119,7 +120,7 @@
 
 
     <div class="flat-card" data-flat-number="202">
-      <img class="flat-img" src="Flat2.jpeg" alt="Flat 4">
+      <img class="flat-img" src="Flat/Flat2.jpeg" alt="Flat/Flat 4">
       <div class="flat-details">
         <h2>Flat 2</h2>
         <p>Size: 3BHK</p>
@@ -132,7 +133,7 @@
 
 
     <div class="flat-card" data-flat-number="303">
-      <img class="flat-img" src="Flat1.jpg" alt="Flat 4">
+      <img class="flat-img" src="Flat/Flat1.jpg" alt="Flat/Flat 4">
       <div class="flat-details">
         <h2>Flat 3</h2>
         <p>Size: 2BHK</p>
@@ -145,7 +146,7 @@
 
 
     <div class="flat-card" data-flat-number="404">
-      <img class="flat-img" src="Flat2.jpeg" alt="Flat 4">
+      <img class="flat-img" src="Flat/Flat2.jpeg" alt="Flat 4">
       <div class="flat-details">
         <h2>Flat 4</h2>
         <p>Size: Studio</p>
@@ -158,7 +159,7 @@
 
 
     <div class="flat-card" data-flat-number="505">
-      <img class="flat-img" src="Flat2.jpeg" alt="Flat 5">
+      <img class="flat-img" src="Flat/Flat2.jpeg" alt="Flat 5">
       <div class="flat-details">
         <h2>Flat 5</h2>
         <p>Size: 3BHK</p>
@@ -171,7 +172,7 @@
 
 
     <div class="flat-card" data-flat-number="606">
-      <img class="flat-img" src="Flat2.jpeg" alt="Flat 6">
+      <img class="flat-img" src="Flat/Flat2.jpeg" alt="Flat 6">
       <div class="flat-details">
         <h2>Flat 6</h2>
         <p>Size: 2BHK</p>
@@ -184,7 +185,7 @@
 
 
     <div class="flat-card" data-flat-number="707">
-      <img class="flat-img" src="Flat2.jpeg" alt="Flat 7">
+      <img class="flat-img" src="Flat/Flat2.jpeg" alt="Flat 7">
       <div class="flat-details">
         <h2>Flat 7</h2>
         <p>Size: 3BHK</p>
@@ -197,7 +198,7 @@
 
 
     <div class="flat-card" data-flat-number="808">
-      <img class="flat-img" src="Flat2.jpeg" alt="Flat 8">
+      <img class="flat-img" src="Flat/Flat2.jpeg" alt="Flat 8">
       <div class="flat-details">
         <h2>Flat 8</h2>
         <p>Size: 1BHK</p>
@@ -245,17 +246,17 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <h2 class="med-head">It was very difficult to look for flats according to my requirement but with PRS rentals it has been the best.</h2>
-          <img class="testimonial-image" src="Flat3.jpg" alt="saakshi-profile">
+          <img class="testimonial-image" src="Flat/Flat3.jpg" alt="saakshi-profile">
           <em>Saakshi Joshi, New York.</em>
         </div>
         <div class="carousel-item">
           <h2 class="med-head">They have the best flats with the best facilities. Definitely worth it.</h2>
-          <img class="testimonial-image" src="Flat4.jpeg" alt="Pushpanjali-profile">
+          <img class="testimonial-image" src="Flat/Flat4.jpeg" alt="Pushpanjali-profile">
           <em>Pushpanjali, Boston.</em>
         </div>
         <div class="carousel-item">
           <h2 class="med-head testimonial-text">The locations of these flats are just prefect with regard to work too. Just the best. </h2>
-          <img class="testimonial-image" src="Flat5.jpeg" alt="Ranjitha-profile">
+          <img class="testimonial-image" src="Flat/Flat5.jpeg" alt="Ranjitha-profile">
           <em>Ranjitha, Illinois.</em>
         </div>
       </div>
@@ -268,11 +269,17 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+</section>
 
+<div class="flat-avlsec">
+  <h1 font-family: 'Montserrat' , sans-serif;>Get to know us more...</h1>
+</div>
 
+<div class="button-container">
+    <a href="login.html" class="button-link"><button class="a">Login</button></a>
+    <a href="signup.html" class="button-link"><button class="a">Signup</button></a>
+</div>
 
-
-  </section>
 
   <footer id="footer">
     <div class="meet">
@@ -301,6 +308,23 @@
       document.getElementById("flat-details").style.display = "none";
       document.getElementById("contact-form").style.display = "none";
     }
+
+    document.getElementById('loginBtn').addEventListener('click', function() {
+        document.getElementById('loginForm').classList.add('show');
+        document.getElementById('signupForm').classList.remove('show');
+    });
+
+    document.getElementById('signupBtn').addEventListener('click', function() {
+        document.getElementById('signupForm').classList.add('show');
+        document.getElementById('loginForm').classList.remove('show');
+    });
+
+    document.getElementById('signupLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of the anchor tag
+        document.getElementById('signupForm').classList.add('show');
+        document.getElementById('loginForm').classList.remove('show');
+    });
+
 </script>
 
 
