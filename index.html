@@ -100,6 +100,7 @@
   </section>
 
 
+  <div class="b">
   <div class="flat-avlsec">
     <h1 font-family: 'Montserrat' , sans-serif;>Get to know us more...</h1>
   </div>
@@ -108,6 +109,7 @@
     <a href="login.html" class="button-link"><button class="a">Login</button></a>
     <a href="signup.html" class="button-link"><button class="a">Signup</button></a>
   </div>
+</div>
 
 
   <footer id="footer">
@@ -124,20 +126,6 @@
 
 
   <script>
-    function showContactForm(flatTitle) {
-      // Hide flat listings and show the contact form
-      document.getElementById("flat-listings").style.display = "none";
-      document.getElementById("flat-details").style.display = "none";
-      document.getElementById("contact-form").style.display = "block";
-    }
-
-    function goBackToListings() {
-      // Hide contact form and show flat listings
-      document.getElementById("flat-listings").style.display = "grid"; // Set display to grid
-      document.getElementById("flat-details").style.display = "none";
-      document.getElementById("contact-form").style.display = "none";
-    }
-
     document.getElementById('loginBtn').addEventListener('click', function() {
       document.getElementById('loginForm').classList.add('show');
       document.getElementById('signupForm').classList.remove('show');
